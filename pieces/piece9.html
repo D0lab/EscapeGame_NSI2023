@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link href="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../css/salle.css" rel="stylesheet">
+	<title>Piece9</title>
+</head>
+
+<body>
+    <div class="container-fluid" id='corps'>
+		<center><p id="minuteur" style="color:white"></p></center>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-8">
+               <img id="ecran" src="../images/piece9/fond.jpg" usemap="#map">
+        </div>
+
+        <div id='trousse' class="col-6 col-lg-4">
+        Image par <a href="https://www.freepik.com/free-vector/control-panel-room-nuclear-power-plant-with-open-door-reactor-vector-cartoon-interior-command-center-underground-bunker-shelter-secret-laboratory-with-green-glow-radiation_20836287.htm">upklyak</a>
+        </div>
+    </div>
+    </div>
+    <map name="map" id="map">
+    <area shape="rect" class ="objets" data-nom="boutonsrouges1" coords="1456,2628,2240,2704" />
+    <area shape="rect" class ="objets" data-nom="boutonsrouges2" coords="2629,2624,3413,2700" />
+    <area shape="rect" class ="objets" data-nom="boutonsrouges2" coords="3835,2630,4619,2706" />
+    <area shape="rect" class ="objets" data-nom="ecran" coords="3961,1613,4591,2052" />
+    
+	</map>
+	
+	<div id="d1">
+		<center>
+			
+		<div>
+        <h3>Ce schéma illustre une réaction de</h3>
+		</div>
+		<img id="reaction" src="../images/piece9/reaction.jpg" width="134px" height="149px" >
+		<input type="text" id="reponse">
+		</br></br><input type="submit" value="confirmer" onClick="confirmationquestion()"/>
+		</br><img id="mrpotion" src="../images/mrpotion.png" height="200px" width="200px">
+		</center>
+		
+		
+	</div>
+    
+    <script>
+    
+    
+    function confirmationquestion() {
+	
+
+		if (document.getElementById('reponse').value == "fusion" || document.getElementById('reponse').value == "Fusion" ) {
+			console.log('oui')
+			document.location.href="../pieces/fin.html"; 
+		}
+
+		else{
+			console.log('non')
+			document.location.href="../pieces/perdu.html"; 
+			var explosionslieux = JSON.parse(localStorage.getItem("explosionslieux"));
+			explosionslieux.push(" Quest (p9) ")
+			localStorage.setItem("explosionslieux", JSON.stringify(explosionslieux));
+		}
+
+	}
+    
+    
+    
+    </script>
+	
+	
+	
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/imageMapResizer.js" type="application/javascript">></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/jquery/jquery-3.3.1.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/popper/popper.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootbox/bootbox.all.min.js" type="application/javascript"></script>
+<script src="../js/pieces/piece9.js" type="application/javascript"></script>
+<script src="../js/outils/cheatcode.js" type="application/javascript"></script>
+<script src="../js/outils/timer.js" type="application/javascript"></script>
+   
+   
+</body>
+</html>
+
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link href="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../css/salle.css" rel="stylesheet">
+	<title>Piece7</title>
+</head>
+
+<body>
+    <div class="container-fluid" id='corps'>
+		<center><p id="minuteur" style="color:white"></p></center>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-8">
+               <img id="ecran" src="../images/piece7/fond.jpg" usemap="#map">
+        </div>
+
+        <div id='trousse' class="col-6 col-lg-4">
+        Image par <a href="https://www.freepik.com/free-vector/control-panel-room-nuclear-power-plant-with-open-door-reactor-vector-cartoon-interior-command-center-underground-bunker-shelter-secret-laboratory-with-green-glow-radiation_20836287.htm">upklyak</a>
+        </div>
+    </div>
+    </div>
+    
+    <map name="map" id="map">
+    <area shape="circle" class ="objets" data-nom="porte" coords="535,480,156" />
+    <area shape="poly" class ="objets" data-nom="boutonrouge" coords="1527,577,1543,565,1551,551,1532,549,1515,553,1507,568" />
+    <area shape="poly" class ="objets" data-nom="serrure" coords="1056,578,1071,573,1066,558,1042,563,1042,577" />
+    <area shape="poly" class ="objets" data-nom="ecran" coords="1163,502,1460,504,1473,354,1458,337,1164,337,1151,354" />
+    <area shape="poly" class ="objets" data-nom="moniteur" coords="1012,453,1071,453,1076,512,1019,521" />
+    
+    
+	</map>
+	
+	<div id="d2">
+		<img id="bluescreen" src="../images/piece8/bluescreen.png" width="600px" height="337px" >
+	</div>
+	
+	<div id="d1">
+	
+<div id="game1">
+	<center>
+	<center><p id="resultat" style="color:black"></p></center>
+
+<div class="container1">
+    <div>
+		
+		
+		<table>
+	
+		<td><div id="divmodele1"><img id="img1" src="../images/piece7/question/watt.png" height="120px" width="120px"></div></td>
+		<td><div id="divmodele2"><img id="img2" src="../images/piece7/question/edison.png" height="120px" width="120px"></div></td>
+		<td><div id="divmodele3"><img id="img3" src="../images/piece7/question/faraday.png" height="120px" width="120px"></div></td>
+		<td><div id="divmodele4"><img id="img4" src="../images/piece7/question/oersted.png" height="120px" width="120px"></div></td>
+
+</table>
+		
+	<table>
+		<td><div id="divfinal1" ondrop="drop(event,1)" ondragover="allowDrop(event)"></div></td>
+		<td><div id="divfinal2" ondrop="drop(event,2)" ondragover="allowDrop(event)"></div></td>
+		<td><div id="divfinal3" ondrop="drop(event,3)" ondragover="allowDrop(event)"></div></td>
+		<td><div id="divfinal4" ondrop="drop(event,4)" ondragover="allowDrop(event)"></div></td>		
+	</table>
+	
+	</br></br></br>
+    <table>
+		
+    <tr>
+       <td><div id="divbase1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1" src="../images/piece7/question/faradayinvention.jpg" height="118px" width="118px" draggable="true" ondragstart="drag(event)" ondrop=""></div></td>
+        <td><div id="divbase2" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag2" src="../images/piece7/question/wattinvention.jpeg" height="118px" width="118x" draggable="true" ondragstart="drag(event)" ></div></td>
+        <td><div id="divbase3" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag3" src="../images/piece7/question/edisoninvention.jpg" height="118px" width="118px" draggable="true" ondragstart="drag(event)" ondrop=""></div></td>
+        <td><div id="divbase4" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag4" src="../images/piece7/question/oerstedinvention.jpg" height="118px" width="118px" draggable="true" ondragstart="drag(event)" ondrop=""></div></td>
+       </tr>
+    </table>
+           <input type="button" value="Reset" id="reset" onclick="reset1();" style="width:150px; background-color:black; color:white;"> 
+           </br>
+           <input type="button" value="Confirmer" id="confirm" onclick="verifcases();" style="width:150px; background-color:black; color:white;">
+		</br><img id="mrpotion" src="../images/mrpotion.png" height="200px" width="200px">
+           </center> 
+    </div>
+</div>		
+
+    </div>
+	
+	
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/imageMapResizer.js" type="application/javascript">></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/jquery/jquery-3.3.1.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/popper/popper.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootbox/bootbox.all.min.js" type="application/javascript"></script>
+<script src="../js/pieces/piece7.js" type="application/javascript"></script>
+<script src="../js/outils/cheatcode.js" type="application/javascript"></script>
+<script src="../js/outils/timer.js" type="application/javascript"></script>
+   
+   
+</body>
+</html>
+
+

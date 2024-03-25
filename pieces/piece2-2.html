@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link href="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../css/salle.css" rel="stylesheet">
+	<title>Piece2</title>
+</head>
+
+<body>
+    <div class="container-fluid" id='corps'>
+		<center><p id="minuteur" style="color:white"></p></center>
+		<center><p id="piecescheck" style="color:white"></p></center>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-8">
+               <img id="ecran" src="../images/piece2/fond.jpg" usemap="#map">
+        </div>
+
+        <div id='trousse' class="col-6 col-lg-4">
+        Image par <a href="https://www.istockphoto.com/fr/vectoriel/b%C3%A2timent-dusine-avec-la-fum%C3%A9e-noire-des-chemin%C3%A9es-gm1220420349-357354775">klyaksun</a>
+        </div>
+    </div>
+    </div>
+    
+    <map name="map" id="map">
+ 		<area shape="rect" class ="objets" data-nom="entree1" coords="2330,2144,2549,2330"  />
+ 		<area shape="rect" class = "objets" data-nom="entree2" coords="1674,2137,1790,2337"  />		
+ 		<area shape="poly" class ="objets" data-nom="garage" coords="3077,1996,3612,1983,3650,2343,3071,2343"  />
+ 		<area shape="poly" class ="objets" data-nom="centrale" coords="1410,837,2208,837,2150,1049,2157,1294,1938,1307,1951,1616,1429,1873,1481,1030"  />
+
+	</map>
+	
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/imageMapResizer.js" type="application/javascript">></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/jquery/jquery-3.3.1.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/popper/popper.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootbox/bootbox.all.min.js" type="application/javascript"></script>
+<script src="../js/pieces/piece2-2.js" type="application/javascript"></script>
+<script src="../js/outils/cheatcode.js" type="application/javascript"></script>
+<script src="../js/outils/timer.js" type="application/javascript"></script>
+   
+   
+</body>
+</html>
+
+

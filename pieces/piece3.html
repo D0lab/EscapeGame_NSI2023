@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link href="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../css/salle.css" rel="stylesheet">
+
+
+	<title>Piece3</title>
+</head>
+
+<body>
+    <div class="container-fluid" id='corps'>
+		<center><p id="minuteur" style="color:white"></p></center>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-8">
+               <img id="ecran" src="../images/piece3/fond.png" usemap="#map">
+        </div>
+
+        <div id='trousse' class="col-6 col-lg-4"></div>
+    </div>
+    </div>
+    
+    <map name="map" id="map">
+ 		<area shape="rect" class ="objets" data-nom="retour" coords="62,34,449,472"  />
+ 		<area shape="poly" class = "objets" data-nom="flamme" coords="1080,1107,1061,1131,1069,1166,1088,1171,1104,1163,1106,1128"  />		
+ 		<area shape="poly" class ="objets" data-nom="potion" coords="1422,1015,1424,1091,1364,1192,1371,1205,1525,1213,1533,1195,1475,1091,1475,1012"  />
+	</map>
+	
+	<div id="d1">
+		<center>
+			
+		<div>
+        <h3>De quoi est constitué un électroaimant ?</h3>
+		</div>
+		
+        
+		</br><input id="a1" type="radio" name="type" value="reponse1" />bobine + générateur
+		</br><input id="a2" type="radio" name="type" value="reponse2" />aimant
+		</br><input id="a3" type="radio" name="type" value="reponse3" />bobine + générateur + mouvement
+		</br></br><input type="submit" value="confirmer" onClick="confirmationqcm()"/>
+		</br><img id="mrpotion" src="../images/mrpotion.png" height="200px" width="200px">
+		
+
+		</center>
+    </div>
+    
+    <script>
+    
+    
+    function confirmationqcm() {
+
+
+		if (document.getElementById('a1').checked ) {
+			console.log('oui')
+			document.location.href="../pieces/piece2-2.html"; 
+		}
+
+		else{
+			console.log('non')
+			document.location.href="../pieces/perdu.html"; 
+			var explosionslieux = JSON.parse(localStorage.getItem("explosionslieux"));
+			explosionslieux.push(" QCM (p3) ")
+			localStorage.setItem("explosionslieux", JSON.stringify(explosionslieux));
+		}
+
+	}
+    
+    
+    
+    </script>
+   
+   
+	<script src="https://pbellevue.libreedu.ovh/dev/system/components/imageMapResizer.js" type="application/javascript">></script>
+	<script src="https://pbellevue.libreedu.ovh/dev/system/components/jquery/jquery-3.3.1.min.js" type="application/javascript"></script>
+	<script src="https://pbellevue.libreedu.ovh/dev/system/components/popper/popper.min.js" type="application/javascript"></script>
+	<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+	<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootbox/bootbox.all.min.js" type="application/javascript"></script>
+	<script src="../js/pieces/piece3.js" type="application/javascript"></script>
+<script src="../js/outils/cheatcode.js" type="application/javascript"></script>
+<script src="../js/outils/timer.js" type="application/javascript"></script>
+   
+	
+
+   
+</body>
+</html>
+
+

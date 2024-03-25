@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<title>GAME OVER</title>
+    <style>
+      .unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    </style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="../css/accueil.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="unselectable">
+	<div class="body" id='body'>
+		<center><p id="minuteur" style="color:white"></p></center>
+	<div class="img" id='img'>
+ 
+			   <img src="../images/perdu.jpg">
+			   <!-- <img class="displayed" src="image/escape-game-bretagne.jpg"> --> 
+   
+   
+   
+   
+	<center>
+		<h1> 
+         <script type="text/javascript">
+				function phrasealeatoire(){
+				   var tabPhrases = new Array();
+					   tabPhrases[0]  = "POV : Hiroshima";
+					   tabPhrases[1]  = "POV : Nagasaki";
+					   tabPhrases[2]  = "Vous, vous êtes soit incroyablement courageux, soit immensément con !";
+					   tabPhrases[3]  = "La folie c’est refaire sans arrêt exactement la même connerie qu’on répète sans arrêt, en espérant que ça change";
+					   tabPhrases[4]  = "The cake is a lie";
+					   tabPhrases[5]  = "C’est dangereux de sortir tout seul, tiens, va chercher ta maman";
+					   tabPhrases[6]  = "Avant j’étais un aventurier comme toi. Et puis je me suis pris une flèche dans le cul";
+					   tabPhrases[7]  = "Mes couilles sur ton nez, t’auras l’air d’un dindon";
+					   tabPhrases[8]  = "Merci d’avoir essayé ! Mais tu es trop guez rentre chez toi !";
+					   tabPhrases[9]  = "Tout ce que t’avais à faire, c’était ne pas appuyer sur le foutu bouton !";
+					   tabPhrases[10]  = "N’oubliez pas… pagaie";
+					   tabPhrases[11]  = "Il y a des gens qui vous attaquent délibérément ???";
+					   tabPhrases[12]  = "Certains arbres s’épanouissent, d'autres meurent. Certaines vaches grandissent, d'autres sont dévorées par les loups. Certains hommes naissent assez riches et stupides pour profiter de la vie. Rien n’est juste. Tu le sais très bien. EXPLOSE !!!";
+					   tabPhrases[13]  = "Nous faisons tous des choix, mais en réalité, ce sont ces choix qui nous font exploser";
+					   tabPhrases[14]  = "Les patients sont priés d'être patient";
+					   tabPhrases[15]  = "Bwaaaaaaaaaaaaaaah";
+					   tabPhrases[16]  = "Le mur je te présente le visage, le visage je te présente le mur";
+					   tabPhrases[17]  = "ÇA VA PÉTER ! PÉTER ! Ah bah ça a pété";
+		 
+					return tabPhrases[Math.round(Math.random()*17)];
+					
+				}
+
+            document.write(phrasealeatoire())
+            
+         </script>
+      </h1>
+      
+		<a href="../pieces/intro2.html">	
+		<button class="custom-btn btn-10">
+			RESTART
+		</button>
+		</a>
+        <p id="minuteur"></p>
+	</center>
+		   
+			
+		   
+		 
+	</div></div>
+	
+	
+		
+   
+</body>
+
+
+	<script src="../js/menus/perdu.js"></script>
+<script src="../js/outils/cheatcode.js" type="application/javascript"></script>
+<script src="../js/outils/timer.js" type="application/javascript"></script>
+   
+
+
+</html>

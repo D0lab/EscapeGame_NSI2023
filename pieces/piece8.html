@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link href="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../css/salle.css" rel="stylesheet">
+	<title>Piece8</title>
+</head>
+
+<body>
+    <div class="container-fluid" id='corps'>
+		<center><p id="minuteur" style="color:white"></p></center>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-8">
+               <img id="ecran" src="../images/piece8/fond.jpg" usemap="#map">
+        </div>
+
+        <div id='trousse' class="col-6 col-lg-4">
+        Image par <a href="https://www.freepik.com/free-vector/control-panel-room-nuclear-power-plant-with-open-door-reactor-vector-cartoon-interior-command-center-underground-bunker-shelter-secret-laboratory-with-green-glow-radiation_20836287.htm">upklyak</a>
+        </div>
+    </div>
+    </div>
+    <map name="map" id="map">
+    <area shape="circle" class ="objets" data-nom="porte" coords="1656,1488,477" />
+    <area shape="poly" class ="objets" data-nom="boutonrouge" coords="4752,1780,4794,1774,4842,1753,4842,1711,4778,1700,4762,1743" />
+    <area shape="poly" class ="objets" data-nom="serrure" coords="3257,1790,3299,1796,3331,1764,3294,1737,3262,1758" />
+    <area shape="poly" class ="objets" data-nom="moniteur" coords="3172,1420,3347,1430,3337,1605,3188,1610" />
+    <area shape="poly" class ="objets" data-nom="ecran" coords="3639,1573,4561,1568,4609,1102,4545,1043,3644,1059,3602,1107" />
+    <area shape="rect" class ="objets" data-nom="keypad" coords="2398,1361,2573,1647" />
+    
+	</map>
+	
+	<div id="d1">
+		<img id="bluescreen" src="../images/piece8/bluescreen.png" width="600px" height="337px" >
+	</div>
+	
+	<div id="d2">	
+		<center>
+		<h2>DONNEES RECOLTEES</h2>	
+		U = 25V </br>
+		P = ???? </br> 
+		I = 157A </br>
+		</center>
+	</div>
+	
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/imageMapResizer.js" type="application/javascript">></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/jquery/jquery-3.3.1.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/popper/popper.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootbox/bootbox.all.min.js" type="application/javascript"></script>
+<script src="../js/pieces/piece8.js" type="application/javascript"></script>
+<script src="../js/outils/cheatcode.js" type="application/javascript"></script>
+<script src="../js/outils/timer.js" type="application/javascript"></script>
+   
+   
+</body>
+</html>
+
+

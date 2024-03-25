@@ -1,0 +1,39 @@
+#ecran {
+
+	width: 100%;
+	height: auto;
+	cursor: cell;
+		
+}
+
+
+#trousse {
+ background-color:cyan;
+}
+
+.objets {
+cursor: crosshair;
+
+}
+
+body {
+	
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("../images/egfond.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Balsamiq Sans", cursive;
+ 
+  }
+
+
+.container1 table div{
+	width:120px;
+	height:120px;
+	border:1px solid red;
+}
+
+
+#d1{background-color: #FFFFFFFF;}
+#d2{background-color: #FFFFFFFF;}

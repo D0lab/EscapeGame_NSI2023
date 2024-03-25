@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link href="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../css/salle.css" rel="stylesheet">
+	<title>Piece1</title>
+</head>
+
+<body>
+	
+    <div class="container-fluid" id='corps'>
+		<center><p id="minuteur" style="color:white"></p></center>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-8">
+               <img id="ecran" src="../images/piece1/fond.jpg" usemap="#map">
+        </div>
+
+        <div id='trousse' class="col-6 col-lg-4">
+        Image par <a href="https://www.freepik.com/premium-vector/car-drive-garage-interior-storage-room-auto-illustration_4860147.htm">unitonevector</a>
+        </div>
+    </div>
+    </div>
+    
+    <map name="map" id="map">    
+ 		<area shape="poly" class ="objets" data-nom="roue" coords="252,307,254,321,262,328,271,331,284,330,295,322,301,309,301,295,289,282,271,280,256,291"  />
+		<area shape="poly" class ="objets" data-nom="voiture" coords="616,384,621,396,635,402,652,403,663,391,667,376,738,349,740,254,704,237,596,250,560,287,506,308,492,316,490,329,489,349,492,368,560,395,591,396"  />
+		<area shape="circle" class ="objets" data-nom="horloge" coords="433,187,14"  />
+	</map>
+	
+	
+
+	
+	<div id="d1">
+		<center>
+			
+		<div>
+        <h3>Qui a inventé la pile électrique ?</h3>
+		</div>
+		
+        
+		</br><input id="a1" type="radio" name="type" value="reponse1" />Michael Faraday
+		</br><input id="a2" type="radio" name="type" value="reponse2" />Alessandro Volta
+		</br><input id="a3" type="radio" name="type" value="reponse3" />Thomas Edison
+		</br></br><input type="submit" value="confirmer" onClick="confirmationqcm()"/>
+		</br><img id="mrpotion" src="../images/mrpotion.png" height="200px" width="200px">
+		
+
+		</center>
+    </div>
+    
+    <script>
+    
+    
+    function confirmationqcm() {
+
+
+		if (document.getElementById('a2').checked ) {
+			console.log('oui')
+			konamicheck = 'Non'
+			localStorage.setItem("konami", konamicheck);
+			document.location.href="../pieces/piece2.html";
+			 
+		}
+
+		else{
+			console.log('non')
+			document.location.href="../pieces/perdu.html"; 
+			var explosionslieux = JSON.parse(localStorage.getItem("explosionslieux"));
+			explosionslieux.push(" QCM (p1) ")
+			localStorage.setItem("explosionslieux", JSON.stringify(explosionslieux));
+		}
+
+	}
+    
+    
+    
+    </script>
+    
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/imageMapResizer.js" type="application/javascript">></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/jquery/jquery-3.3.1.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/popper/popper.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="https://pbellevue.libreedu.ovh/dev/system/components/bootbox/bootbox.all.min.js" type="application/javascript"></script>
+<script src="../js/pieces/piece1.js" type="application/javascript"></script>
+<script src="../js/outils/cheatcode.js" type="application/javascript"></script>
+<script src="../js/outils/timer.js" type="application/javascript"></script>
+   
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+
+body {
+  color : white;
+  min-height: 100vh;
+  display: grid;
+  background: url("../images/egfond.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+
+img{
+    width: 100%;
+    max-width:450px;
+    display : block;
+	margin-left : auto;
+	margin-right : auto; 
+    
+}
+
+.imgintro{
+    width: 100%;
+    max-width:900px;
+    display : block;
+	margin-left : auto;
+	margin-right : auto; 
+    
+}
+	
+
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 325px;
+  height: 100px;
+  font-size: 55px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+
+
+/* 10 */
+.btn-10 {
+  background: rgb(22,9,240);
+background: linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 100%);
+  color: #000000;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+.btn-10:hover {
+  color: #fff;
+  border: none;
+  background: transparent;
+}
+.btn-10:hover:after {
+  background: rgb(0,3,255);
+background: linear-gradient(0deg, rgba(105,105,105,1) 0%,  rgba(128,128,128,1)100%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
